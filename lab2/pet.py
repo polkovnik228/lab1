@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+
+class Pet(ABC):
+    """Интерфейс питомца: только сигнатуры методов, без полей и поведения."""
+
+    @abstractmethod
+    def express(self) -> None:
+        pass
+
+    @abstractmethod
+    def get_name(self) -> str:
+        pass
+
+    @abstractmethod
+    def get_age(self) -> int:
+        pass
+
+    @abstractmethod
+    def get_age_in_human_years(self) -> int:
+        pass

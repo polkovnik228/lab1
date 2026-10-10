@@ -1,0 +1,17 @@
+from animal import Animal
+
+
+class Turtle(Animal):
+
+    def get_age_in_human_years(self) -> int:
+        if self.get_age() <= 0:
+            return 0
+        return 15 + (self.get_age() - 1) * 2
+
+    def express(self) -> None:
+        print(r"""  _____     ____
+ /      \  |  o |
+|        |/ ___\|
+|_________/
+|_|_| |_|_|
+""")
